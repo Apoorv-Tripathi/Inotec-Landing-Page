@@ -4,6 +4,7 @@ import heroGovernment from '../assets/images/hero-government.jpg'
 import heroEngineers from '../assets/images/hero-engineers.jpg'
 import heroCalibration from '../assets/images/hero-calibration.jpg'
 import productDi3000 from '../assets/images/product-di-3000.jpg'
+import productWm2100 from '../assets/images/product-wm-2100.jpg'
 import productAc500 from '../assets/images/product-ac-500.jpg'
 import aboutFacility from '../assets/images/about-facility.jpg'
 import gallery01 from '../assets/images/gallery-01.jpg'
@@ -33,6 +34,7 @@ export const company = {
     sales: '+91-9453245747',
     service: '+91-9453283173',
     calibration: '+91-9453283173',
+    whatsapp: '+919453245747',
   },
   email: 'support@inotec.co.in',
   website: 'www.inotec.co.in',
@@ -144,52 +146,104 @@ export const products = [
     id: 'di-3000',
     name: 'Digital Tyre Inflator',
     model: 'DI-3000',
+    category: 'tyre-inflator',
+    categoryLabel: 'Tyre Inflators',
+    badge: 'Industry Standard',
     description:
-      'High-accuracy digital tyre inflator designed for fuel stations and automotive workshops.',
+      'High-accuracy digital tyre inflator designed for fuel stations, fleet yards, and modern automotive workshops.',
     image: productDi3000,
     specs: [
-      { label: 'Pressure Range', value: '0–150 PSI' },
-      { label: 'Accuracy', value: '±1 PSI' },
-      { label: 'Display', value: 'LED / LCD Backlit' },
-      { label: 'Power', value: '230V AC, 50 Hz' },
-      { label: 'Hose Length', value: '8 meters' },
-      { label: 'System', value: 'Microcontroller Based Auto Sensing' },
-      { label: 'Mounting', value: 'Floor Standing' },
+      { label: 'Pressure Range', value: '0–150 PSI (0–10.3 BAR)' },
+      { label: 'Accuracy', value: '±1 PSI (±0.07 BAR)' },
+      { label: 'Display', value: 'LED / LCD Backlit Dual Readout' },
+      { label: 'Power', value: '230V AC ±10%, 50 Hz' },
+      { label: 'Hose Length', value: '8 meters wire-braided' },
+      { label: 'System', value: 'Microcontroller Auto-Sensing' },
+      { label: 'Mounting', value: 'Heavy Floor Standing / Pillar' },
     ],
+    technicalSheet: {
+      electrical: '230V AC ± 10%, 50 Hz, Single Phase (Surge Protected SMPS)',
+      operatingPressure: '0 – 150 PSI (0 – 10.3 BAR / 0 – 1034 kPa)',
+      accuracy: '±1 PSI (±0.07 BAR) full scale repeatability',
+      sensor: 'High-stability ceramic piezo-resistive transducer with auto zero-drift logic',
+      inletPressure: 'Minimum 10 PSI above target delivery; Max inlet 175 PSI',
+      inletFittings: '1/4" BSP Female union with integrated 40-micron particulate filter',
+      hoseSpecification: '8-meter heavy-duty braided wire polyurethane hose with dual clip-on chuck',
+      enclosure: '1.6mm CRCA Sheet Steel, 7-tank chemical pre-treatment, RAL 7021 electrostatic powder coat',
+      protectionClass: 'IP54 dust, moisture and splash resistant enclosure',
+      operatingTemp: '-10°C to +55°C (14°F to 131°F)',
+      metrologyStandard: 'Weights & Measures / Legal Metrology Act compliant, NABL laboratory calibration traceable',
+      warranty: '12 Months Comprehensive OEM Warranty with optional on-site AMC',
+    },
   },
   {
     id: 'n2-2100',
     name: 'Nitrogen Tyre Inflator',
     model: 'N2-2100',
+    category: 'nitrogen',
+    categoryLabel: 'Nitrogen Systems',
+    badge: 'High Demand',
     description:
-      'High-purity nitrogen tyre inflation system for fuel stations and automotive workshops.',
-    image: '/src/assets/images/product-wm-2100.jpg',
+      'High-purity nitrogen tyre inflation generator for retail fuel stations, commercial tyres, and premium tyre care centres.',
+    image: productWm2100,
     specs: [
-      { label: 'Purity', value: 'Up to 95–99%' },
-      { label: 'Pressure Range', value: '0–120 PSI' },
+      { label: 'Purity', value: 'Up to 95–99% N2 Purity' },
+      { label: 'Pressure Range', value: '0–120 PSI (0–8.3 BAR)' },
       { label: 'Accuracy', value: '±1 PSI' },
       { label: 'Display', value: 'Backlit Digital Display' },
-      { label: 'Power', value: '230V AC' },
-      { label: 'Hose Length', value: '10 meters' },
-      { label: 'Installation', value: 'Floor Standing' },
+      { label: 'Power', value: '230V AC, 50 Hz' },
+      { label: 'Hose Length', value: '10 meters dual line' },
+      { label: 'Installation', value: 'Heavy Floor Standing with Internal Tank' },
     ],
+    technicalSheet: {
+      electrical: '230V AC ± 10%, 50 Hz, Single Phase (Consumption < 60W)',
+      operatingPressure: '0 – 120 PSI (0 – 8.3 BAR)',
+      nitrogenPurity: '95% to 99% PSA (Pressure Swing Adsorption) Molecular Sieve Technology',
+      nitrogenOutput: '50 – 70 LPM @ 10 BAR input air supply',
+      internalStorage: 'Heavy-duty 50L internal nitrogen buffer storage vessel',
+      sensor: 'Solid-state digital pressure transducer with automated vacuum evacuation cycle',
+      inletRequirements: 'Clean dry compressed air, 120–145 PSI input',
+      hoseSpecification: '10-meter twin air/nitrogen reinforced hose with heavy-duty brass chucks',
+      enclosure: '1.6mm CRCA Sheet Steel cabinet with lockable service door and ventilation louvers',
+      protectionClass: 'IP54 rated weather-resistant enclosure for semi-covered forecourts',
+      operatingTemp: '-10°C to +55°C',
+      metrologyStandard: 'Calibrated with NABL traceable master reference gauges',
+      warranty: '12 Months Comprehensive OEM Warranty with annual sieve maintenance support',
+    },
   },
   {
     id: 'ac-500',
     name: 'Automatic Air Compressor',
     model: 'AC-500',
+    category: 'compressor',
+    categoryLabel: 'Air Compressors',
+    badge: 'Heavy Duty',
     description:
-      'Heavy-duty automatic air compressor built for continuous industrial and automotive use.',
+      'Heavy-duty industrial automatic air compressor built for uninterrupted industrial, automotive, and continuous pneumatic cycles.',
     image: productAc500,
     specs: [
-      { label: 'Tank Capacity', value: '200 Liters' },
-      { label: 'Motor Power', value: '3 HP / 2.2 kW' },
-      { label: 'Max Pressure', value: '150 PSI' },
-      { label: 'Airflow', value: '250 LPM' },
-      { label: 'Power Supply', value: '230V AC / 50 Hz' },
-      { label: 'Stage', value: 'Single Stage' },
-      { label: 'Weight', value: '85 kg' },
+      { label: 'Tank Capacity', value: '200 Liters (Hydro-Tested)' },
+      { label: 'Motor Power', value: '3 HP / 2.2 kW Heavy-Duty' },
+      { label: 'Max Pressure', value: '150 PSI (10.3 BAR)' },
+      { label: 'Airflow', value: '250 LPM (8.8 CFM)' },
+      { label: 'Power Supply', value: '230V AC / 415V 3-Phase Option' },
+      { label: 'Stage', value: 'Single Stage Precision Cast-Iron' },
+      { label: 'Weight', value: '85 kg dry weight' },
     ],
+    technicalSheet: {
+      electrical: '230V AC / 415V 3-Phase 50 Hz options with thermal overload starter',
+      motorRating: '3.0 HP (2.2 kW) 100% copper wound continuous duty induction motor',
+      tankVolume: '200 Litre air receiver, hydro-tested to 1.5x working pressure as per IS standards',
+      operatingPressure: 'Cut-in 100 PSI / Cut-out 150 PSI (automated pressure switch control)',
+      displacement: '250 LPM (8.8 CFM) free air delivery',
+      pumpConstruction: 'Deep-finned cast iron crankcase and cylinder with splash oil lubrication',
+      safetyValves: 'Spring-loaded ASME-certified safety relief valve + unloader check valve',
+      airDischarge: '1/2" ball valve with automatic moisture condensation purge port',
+      noiseLevel: '< 74 dB(A) at 1 metre distance',
+      protectionClass: 'IP55 motor protection class (Totally Enclosed Fan Cooled)',
+      operatingTemp: '0°C to +50°C continuous ambient rating',
+      warranty: '12 Months Comprehensive OEM Warranty on pump and air receiver tank',
+    },
   },
 ]
 
@@ -223,7 +277,7 @@ export const governmentProjects = [
 
 export const certifications = [
   { name: 'ISO 9001:2015', description: 'Certified quality management system.', logo: isoLogo },
-  { name: 'Udyam Registered', description: 'Registered under Udyam, Ministry of MSME, Government of India. (Please confirm this label.)', logo: emblemLogo },
+  { name: 'Udyam Registered', description: 'Registered under Udyam, Ministry of MSME, Government of India.', logo: emblemLogo },
   { name: 'MSME Business Forum', description: 'Registered member of the MSME Business Forum.', logo: msmeLogo },
   { name: 'GeM Registered', description: 'Approved vendor on the Government e-Marketplace.', logo: gemLogo },
   { name: 'NABL Accredited', description: 'ISO/IEC 17025 accredited by the National Accreditation Board for Testing and Calibration Laboratories.', logo: nablLogo },
@@ -278,4 +332,70 @@ export const contactSubjects = [
   'AMC Enquiry',
   'Calibration Request',
   'General Enquiry',
+]
+
+export const productCategories = [
+  { id: 'all', label: 'All Equipment' },
+  { id: 'tyre-inflator', label: 'Tyre Inflators' },
+  { id: 'nitrogen', label: 'Nitrogen Systems' },
+  { id: 'compressor', label: 'Air Compressors' },
+]
+
+export const procurementDetails = {
+  legalName: 'Inovative Technologies International Pvt. Ltd.',
+  brandName: 'INOTEC',
+  founded: '2018',
+  msmeType: 'Micro & Small Enterprise (Udyam Registered, Govt. of India)',
+  udyamRegistration: 'UDYAM-UP-43-0014298',
+  qualityStandard: 'ISO 9001:2015 Quality Management System',
+  calibrationAccreditation: 'ISO/IEC 17025 Accredited Calibration Laboratory (NABL)',
+  gemStatus: 'Approved OEM & Vendor on Government e-Marketplace (GeM)',
+  factoryAddress: 'Plot No. 822, Sector-F, Gujaini, Udyog Nagar, Kanpur, Uttar Pradesh, India - 208022',
+  phoneHotline: '+91-9453245747 / +91-9453283173',
+  email: 'support@inotec.co.in',
+}
+
+export const faqs = [
+  {
+    id: 'faq-1',
+    category: 'Metrology & Calibration',
+    question: 'How frequently is calibration required for commercial tyre inflators in India?',
+    answer:
+      'Under the Legal Metrology (Weights & Measures) Act and Department rules, commercial tyre inflators deployed at fuel retail outlets (IOCL, HPCL, BPCL), commercial automotive workshops, and tyre shops must undergo annual periodic calibration and verification. INOTEC provides NABL-traceable calibration with comprehensive uncertainty analysis and certification accepted during statutory audits.',
+  },
+  {
+    id: 'faq-2',
+    category: 'Electrical & Reliability',
+    question: 'Can INOTEC digital machines operate reliably on voltage fluctuations or generator backup?',
+    answer:
+      'Yes. All INOTEC digital tyre inflators and nitrogen units feature wide-input Switch Mode Power Supplies (180V – 260V AC) with industrial Metal Oxide Varistor (MOV) surge protection. An integrated non-volatile EEPROM preserves target setpoints, calibration parameters, and cycle counts during sudden power cuts or diesel generator switchovers.',
+  },
+  {
+    id: 'faq-3',
+    category: 'AMC & Service',
+    question: 'What is covered under INOTEC Annual Maintenance Contracts (AMC)?',
+    answer:
+      'Our comprehensive AMC agreements include scheduled quarterly preventive inspection visits, pressure transducer recalibration against master reference gauges, pneumatic filter & moisture drain servicing, priority breakdown response within 24 to 48 hours across major regions, and preferential pricing on genuine OEM replacement components.',
+  },
+  {
+    id: 'faq-4',
+    category: 'Nitrogen Technology',
+    question: 'What nitrogen purity and output does the N2-2100 system deliver?',
+    answer:
+      'The N2-2100 utilizes Pressure Swing Adsorption (PSA) carbon molecular sieves, delivering continuous 95% to 99% nitrogen purity at up to 120 PSI. It includes an automated air-to-nitrogen evacuation and refill sequence, significantly lowering tyre oxidation, reducing tyre running temperatures, and stabilizing tyre pressure for highway and commercial vehicles.',
+  },
+  {
+    id: 'faq-5',
+    category: 'Turnkey & Piping',
+    question: 'Do you offer turnkey engineering including compressed air line plumbing and moisture separation?',
+    answer:
+      'Yes. Our field engineering team delivers complete turnkey forecourt and workshop setups. We assess inlet line flow requirements, install aluminium or galvanised steel compressed air plumbing, mount particulate filters with automated condensate auto-drain valves, and conduct on-site commissioning and operator training.',
+  },
+  {
+    id: 'faq-6',
+    category: 'Government & Tender',
+    question: 'Is INOTEC registered on the Government e-Marketplace (GeM)?',
+    answer:
+      'Yes. INOTEC (Inovative Technologies International Pvt. Ltd.) is an approved OEM registered on the Government e-Marketplace (GeM). Public sector undertakings, Indian Railways, defence establishments, and municipal bodies can directly issue purchase orders and tenders through GeM.',
+  },
 ]

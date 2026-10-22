@@ -10,14 +10,17 @@ import Process from './components/Process'
 import Stats from './components/Stats'
 import Gallery from './components/Gallery'
 import Testimonials from './components/Testimonials'
+import Faq from './components/Faq'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import MobileQuickBar from './components/MobileQuickBar'
+import BackToTop from './components/BackToTop'
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
         <WhatWeDo />
@@ -29,9 +32,12 @@ export default function App() {
         <Stats />
         <Gallery />
         <Testimonials />
+        <Faq />
         <Contact />
       </main>
       <Footer />
+      <MobileQuickBar />
+      <BackToTop />
     </>
   )
 }

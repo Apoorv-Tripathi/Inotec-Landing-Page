@@ -44,6 +44,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Sticky navbar is 72px tall — without this, jumping to a section via the
@@ -286,15 +287,15 @@ textarea:focus-visible {
 }
 
 .corner-marks::before {
-  top: -1px;
-  left: -1px;
+  top: 0;
+  left: 0;
   border-right: none;
   border-bottom: none;
 }
 
 .corner-marks::after {
-  bottom: -1px;
-  right: -1px;
+  bottom: 0;
+  right: 0;
   border-left: none;
   border-top: none;
 }
