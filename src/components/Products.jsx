@@ -5,7 +5,6 @@ import { products, productCategories, company } from '../data/siteData'
 import useReveal from '../hooks/useReveal'
 import SafeImage from './SafeImage'
 import TechnicalDataSheetModal from './TechnicalDataSheetModal'
-import PneumaticConverter from './PneumaticConverter'
 
 function ProductCard({ product, index, onQuoteClick, onOpenTds }) {
   const ref = useReveal()
@@ -145,8 +144,6 @@ export default function Products() {
             />
           ))}
         </div>
-
-        <PneumaticConverter />
         
         <div className="products-banner corner-marks">
           <div className="products-banner__content">

@@ -13,7 +13,7 @@ INOTEC is an **ISO 9001:2015 certified** and **NABL accredited** engineering com
 This web application serves as the primary digital interface for:
 - Showcasing flagship industrial equipment with full engineering specifications.
 - Generating commercial inquiries and technical service requests with automated pre-filled quote routing.
-- Assisting workshop technicians and fleet managers with interactive pneumatic tools.
+- Showcasing field installation track records across public sector and industrial clients.
 - Providing verified statutory credentials and compliance data for government e-Marketplace (GeM) and PSU tender procurement.
 
 ---
@@ -25,16 +25,7 @@ This web application serves as the primary digital interface for:
 - **Interactive TDS Blueprint Modal:** Displays detailed engineering specifications for each machine (metrology parameters, electrical ratings, IP54 enclosure specs, and sensor technology) alongside an ink-saving print option (`@media print`).
 - **Commercial Status Badges:** Quick identification of machine classes (`Industry Standard`, `High Demand`, `Heavy Duty`).
 
-### 2. Workshop Pneumatic Pressure Converter
-- An embedded drafting utility for workshop operators, technicians, and fleet managers.
-- Live, bidirectional conversion across four pneumatic standards:
-  - **PSI** (Pounds per Square Inch — Indian fuel station standard)
-  - **BAR** (Atmospheric Metric — European automotive OEM standard)
-  - **kPa** (Kilopascal — SI scientific metric)
-  - **kg/cm²** (Kilograms per cm² — Traditional workshop gauge)
-- One-tap quick presets for Passenger Cars (32 PSI), Loaded SUVs (36 PSI), Commercial Buses (100 PSI), and Heavy Trucks (120 PSI).
-
-### 3. Government & PSU Tender Compliance Desk
+### 2. Government & PSU Tender Compliance Desk
 - Designed specifically for institutional procurement officers and contractors issuing purchase orders (PO) or participating in GeM bids.
 - Consolidates essential statutory data:
   - **Legal Entity:** Inovative Technologies International Pvt. Ltd.
@@ -45,7 +36,7 @@ This web application serves as the primary digital interface for:
   - **Works & Testing Lab:** Gujaini, Udyog Nagar, Kanpur, UP - 208022
 - **One-Click Clipboard Copy:** Instant formatting and copy-to-clipboard function for tender documentation.
 
-### 4. Technical & Operational FAQ
+### 3. Technical & Operational FAQ
 - Accordion answering real-world operational and metrology concerns:
   - Annual periodic calibration cycles under the Indian Legal Metrology (Weights & Measures) Act.
   - Voltage fluctuation tolerance (180V–260V AC) and non-volatile EEPROM memory retention.
@@ -53,12 +44,12 @@ This web application serves as the primary digital interface for:
   - Nitrogen purity benchmarks (95% to 99% PSA molecular sieve).
   - Turnkey site installation, pipeline plumbing, and moisture separation.
 
-### 5. Multi-Channel Lead Generation
+### 4. Multi-Channel Lead Generation
 - **Automated Quotation Flow:** Clicking *"Get Quote"* on any equipment card automatically scrolls to the contact section, selects "Sales Enquiry", and pre-fills the message with the exact model name.
 - **Instant WhatsApp Integration:** One-tap direct messaging pre-configured with the specific equipment inquiry.
 - **Direct Phone Dialers:** Click-to-call links for sales, AMC service, and calibration lab hotlines.
 
-### 6. Mobile Ergonomics & Responsive Architecture
+### 5. Mobile Ergonomics & Responsive Architecture
 - **Persistent Mobile Quick Bar:** Fixed bottom bar on screens `<768px` for one-tap calling, WhatsApp messaging, and quote requests.
 - **Non-Intrusive Back-to-Top:** Floating button appearing dynamically after 400px of scroll, positioned above the mobile bar to prevent touch collisions.
 - **Field Installation Lightbox:** Click-to-enlarge gallery modal with keyboard navigation (`Escape` dismissal) and touch backdrop dismissal.
@@ -99,7 +90,6 @@ inotec-public/
 │   │   ├── Hero.jsx                # Pause-on-hover carousel with manual chevrons
 │   │   ├── MobileQuickBar.jsx      # Fixed mobile bottom contact bar
 │   │   ├── Navbar.jsx              # Top trust ribbon + primary navigation header
-│   │   ├── PneumaticConverter.jsx  # Interactive pressure converter (PSI/BAR/kPa)
 │   │   ├── Process.jsx             # 6-step consultation to commissioning workflow
 │   │   ├── Products.jsx            # Filterable product catalog & action cards
 │   │   ├── SafeImage.jsx           # Resilient image loader with fallback states
