@@ -50,8 +50,8 @@ This web application serves as the primary digital interface for:
 - **Direct Phone Dialers:** Click-to-call links for sales, AMC service, and calibration lab hotlines.
 
 ### 5. Mobile Ergonomics & Responsive Architecture
-- **Persistent Mobile Quick Bar:** Fixed bottom bar on screens `<768px` for one-tap calling, WhatsApp messaging, and quote requests.
-- **Non-Intrusive Back-to-Top:** Floating button appearing dynamically after 400px of scroll, positioned above the mobile bar to prevent touch collisions.
+- **Quick-Access Mobile Navigation:** Full slide-out navigation drawer with direct tap-to-call, WhatsApp chat, and quotation routing.
+- **Non-Intrusive Back-to-Top:** Floating button appearing dynamically after 400px of scroll for effortless navigation.
 - **Field Installation Lightbox:** Click-to-enlarge gallery modal with keyboard navigation (`Escape` dismissal) and touch backdrop dismissal.
 - **Fluid Layouts:** Rigorously tested across 320px (compact mobile), 390px (standard phone), 768px–1024px (tablets / iPads), and 1440px+ (desktop workstations) with zero horizontal overflow.
 
@@ -88,7 +88,6 @@ inotec-public/
 │   │   ├── Gallery.jsx             # On-site photo gallery with interactive Lightbox
 │   │   ├── GovernmentProjects.jsx  # IOCL, Indian Railways & Oil PSU credentials
 │   │   ├── Hero.jsx                # Pause-on-hover carousel with manual chevrons
-│   │   ├── MobileQuickBar.jsx      # Fixed mobile bottom contact bar
 │   │   ├── Navbar.jsx              # Top trust ribbon + primary navigation header
 │   │   ├── Process.jsx             # 6-step consultation to commissioning workflow
 │   │   ├── Products.jsx            # Filterable product catalog & action cards

@@ -13,7 +13,6 @@ import Testimonials from './components/Testimonials'
 import Faq from './components/Faq'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import MobileQuickBar from './components/MobileQuickBar'
 import BackToTop from './components/BackToTop'
 
 export default function App() {
@@ -36,7 +35,6 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-      <MobileQuickBar />
       <BackToTop />
     </>
   )
